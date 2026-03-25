@@ -1,19 +1,46 @@
-Implementation Notes
----------------------
+FusionP4 - Implementation Notes
+==============================
 
-All the program shall be done in this:
+Architecture Overview
+--------------------
 
-     Syscall Translator
-     (FreeBSD -> Linux)
-             |
-    Graphic API Translator
- (Sony API -> OpenGL & Vulkan)
-             |
-        PS4 SCE Libs
-             |
-Run on a Window or Fullscreen
-             |
-  Tools Menu & Config System
+FusionP4 is designed as a compatibility layer that allows PlayStation 4
+applications to run on Linux systems by translating system-level behavior.
 
-====================
-Everything will be implemented in this order.
+Core Components (in execution order):
+
+1. Syscall Translator
+   - Translates PS4 (FreeBSD-based) syscalls into Linux syscalls
+   - Handles memory, threads, file system, and process behavior
+
+2. Graphics API Translator
+   - Converts Sony GNM/GNMX calls into Vulkan/OpenGL
+   - Responsible for rendering pipeline and shader translation
+
+3. SCE Libraries Layer
+   - Reimplementation of essential PS4 system libraries
+   - Provides expected interfaces for applications
+
+4. Runtime Environment
+   - Windowed / Fullscreen output
+   - Input handling (keyboard, mouse, controller)
+
+5. Tools & Configuration System
+   - Debug tools
+   - Performance settings
+   - Compatibility options
+
+Development Order
+----------------
+
+1. ELF loader
+2. syscall translation
+3. Program execution
+4. Graphics output
+5. Advanced compatibility features
+
+Status
+------
+
+⚠️ Early development stage
+Not capable of running commercial PS4 games
