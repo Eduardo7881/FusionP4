@@ -1,16 +1,35 @@
 # FusionP4 Disclaimer
-FusionP4 (nor Eduardo7881) owns PlayStation(tm) Trademark
-Playstation(tm) is owned by Sony(c)
 
-# FusionP4 isn't a emulator!
-FusionP4 is a compatibility layer for PS4 games run almost natively on Linux without emulators.
-We don't support Piracy nor Copyright Infringement.
+FusionP4 is an independent project and is NOT affiliated with or endorsed by Sony.
 
-# Piracy: No
-You must have a Game Dump for FusionP4 to run properly.
-Using a pirated rom will result in inoperation.
+"PlayStation" is a registered trademark of Sony Interactive Entertainment.
 
-# No Reverse-Engeneered Code Used.
-We don't include Reverse-Engeneered code in our Compatibility Layer.
-All code is written differently.
-We don't support Reverse-Engeneering the PS4 Boot ROM nor the PS4 "Orbis" OS.
+## Project Nature
+
+FusionP4 is a compatibility layer designed for research and educational purposes.
+It aims to allow PlayStation 4 applications to run on Linux systems.
+
+## No Copyrighted Content
+
+FusionP4 does NOT include:
+- PS4 firmware
+- Sony proprietary libraries
+- Game files
+
+Users must provide their own legally obtained content.
+
+## No Piracy
+
+FusionP4 does NOT support piracy in any form.
+
+Using pirated or illegally obtained content is strictly discouraged.
+
+## Clean Room Implementation
+
+All components of FusionP4 are developed using clean-room techniques.
+
+No reverse-engineered or leaked proprietary code is included.
+
+## Legal Notice
+
+This project is provided "as-is", without any warranty.
